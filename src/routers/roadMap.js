@@ -31,7 +31,7 @@ Only respond with the JSON array. Do not include any commentary or markdown form
     const response = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
       {
-        model: 'openai/gpt-3.5-turbo', // or 'mistralai/mistral-small-3.2-24b-instruct:free'
+        model: 'deepseek/deepseek-r1-0528-qwen3-8b:free', // or 'mistralai/mistral-small-3.2-24b-instruct:free'
         messages: [{ role: 'user', content: prompt }],
       },
       {
