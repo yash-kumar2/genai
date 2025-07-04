@@ -35,6 +35,10 @@ const roadmapSchema = new mongoose.Schema({
       default: false
     }
   }],
+   prerequisiteGraph: {
+    type: mongoose.Schema.Types.Mixed,
+    default: null
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
